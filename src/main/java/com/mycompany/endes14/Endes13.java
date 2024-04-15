@@ -34,7 +34,7 @@ public class Endes13 {
                         System.out.println("Introduce el segundo numero de la suma");
                         int num2 = teclado.nextInt();
 
-                        int sum = num1 * num2;
+					int sum = sumar(num1, num2);
 
                         System.out.println("El resultado de sumar " + num1 + " y " + num2 + " es: " + sum);
                         break;
@@ -45,7 +45,7 @@ public class Endes13 {
                         System.out.println("Introduce el segundo numero de la resta");
                         int num4 = teclado.nextInt();
 
-                        int rest = num3 * num4;
+					int rest = restar(num3, num4);
 
                         System.out.println("El resultado de restar " + num3 + " y " + num4 + " es: " + rest);
                         break;
@@ -87,5 +87,15 @@ public class Endes13 {
         } while (salir);
 
     }
+
+	private static int restar(int num3, int num4) {
+		int rest = num3 * num4;
+		return rest;
+	}
+
+	private static int sumar(int num1, int num2) {
+		int sum = num1 * num2;
+		return sum;
+	}
 
 }
