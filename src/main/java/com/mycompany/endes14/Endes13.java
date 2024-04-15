@@ -14,7 +14,7 @@ public class Endes13 {
     public static void main(String[] args) {
 
         boolean salir = true;
-
+      //bucle en el que nos metera al menu hasta escoger la opcion 5, sin la opcion de colocar otra opcion que no sean numeros y del 1 al 5
         do {
             System.out.println(" MENU ");
             System.err.println("1.- Sumar numeros");
@@ -27,6 +27,7 @@ public class Endes13 {
                 int eleccion = teclado.nextInt();
                 
                 switch (eleccion) {
+                //en el caso 1, sumara dos numeros metidos por teclado
                     case 1:
                         System.out.println("Introduce el primer numero de la suma");
                         int num1 = teclado.nextInt();
@@ -37,7 +38,7 @@ public class Endes13 {
 
                         System.out.println("El resultado de sumar " + num1 + " y " + num2 + " es: " + sum);
                         break;
-
+                      //en el caso 2, restara dos numeros metidos por teclado
                     case 2:
                         System.out.println("Introduce el primer numero de la resta");
                         int num3 = teclado.nextInt();
@@ -48,7 +49,7 @@ public class Endes13 {
 
                         System.out.println("El resultado de restar " + num3 + " y " + num4 + " es: " + rest);
                         break;
-
+                      //en el caso3, multiplicara dos numeros metidos por teclado
                     case 3:
                         System.out.println("Introduce el primer numero de la multiplicacion");
                         int num5 = teclado.nextInt();
@@ -59,7 +60,7 @@ public class Endes13 {
 
                         System.out.println("El resultado de multiplicar " + num5 + " y " + num6 + " es: " + mult);
                         break;
-
+                      //en el caso4, dividira dos numeros metidos por teclado
                     case 4:
                         System.out.println("Introduce el primer numero de la division");
                         int num7 = teclado.nextInt();
